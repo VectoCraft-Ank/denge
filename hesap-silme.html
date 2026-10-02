@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Denge — Hesap silme</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #14161c;
+    --muted: #565b69;
+    --line: #e2e4ea;
+    --bg: #ffffff;
+    --wash: #f5f6f8;
+    --accent: #4f45d1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #eceef4;
+      --muted: #a2a8ba;
+      --line: #262a35;
+      --bg: #0a0c11;
+      --wash: #141822;
+      --accent: #9d95f5;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 1rem; margin: 24px 0 6px; }
+  p, li { color: var(--ink); }
+  .lede { color: var(--muted); margin: 0 0 28px; }
+  .callout {
+    background: var(--wash);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin: 24px 0;
+  }
+  .callout p { margin: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .wrap { overflow-x: auto; }
+  ul { padding-left: 20px; }
+  li { margin: 5px 0; }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+  a { color: var(--accent); }
+  code { background: var(--wash); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Denge — Hesabını ve verilerini silme</h1>
+<p class="lede">Uygulama: Denge (<code>com.denge.asistani</code>)</p>
+
+<div class="callout">
+  <p>Hesap açmak isteğe bağlıdır. Hesap açmadıysan sunucuda hiçbir verin yoktur; telefondaki
+  kayıtları silmek için uygulamayı kaldırman yeterlidir.</p>
+</div>
+
+<h2>Uygulamadan sil (en hızlı yol)</h2>
+<ol>
+  <li>Denge'yi aç ve Google hesabınla giriş yap.</li>
+  <li><strong>Profil</strong> sekmesinde en üstteki hesap satırına (e-posta adresin) dokun.</li>
+  <li><strong>Hesabımı sil</strong>'e dokun ve onayla.</li>
+</ol>
+<p>Hesabın ve buluttaki tüm kayıtların (profil, öğün, ölçüm, ilaç, hatırlatma, tarif) hemen
+silinir. Telefondaki kayıtlar silinmez; onları da silmek için Profil → Ayarlar → “Veri,
+yedekleme ve gizlilik” → silme bölümünü kullan ya da uygulamayı kaldır.</p>
+
+<h2>Uygulamaya erişemiyorsan</h2>
+<p><strong>teamtask.destek@gmail.com</strong> adresine, hesabının kayıtlı olduğu e-posta adresinden
+“Denge hesap silme” konulu bir e-posta gönder. Talebin en geç 30 gün içinde yerine getirilir
+ve sana bildirilir.</p>
+
+<h2>Neler silinir, neler kalır?</h2>
+<ul>
+  <li><strong>Silinir:</strong> hesap bilgisi (e-posta, giriş yöntemi) ve buluttaki tüm yedek.</li>
+  <li><strong>Saklanmaz:</strong> silme sonrası hiçbir kayıt tutulmaz. Hizmet sağlayıcının
+      sistem yedeklerinden tamamen çıkması en geç 30 gün sürebilir.</li>
+  <li><strong>Etkilenmez:</strong> Denge Plus satın alman Google Play hesabına bağlıdır;
+      “Satın alımlarımı geri yükle” ile yeniden açılır.</li>
+</ul>
+
+<footer>
+  Denge · <code>com.denge.asistani</code> · <a href="gizlilik.html">Gizlilik politikası</a>
+</footer>
+
+</main>
+</body>
+</html>
